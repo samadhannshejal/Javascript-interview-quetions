@@ -1,0 +1,29 @@
+1. What is the event loop in JavaScript?
+   Explain how the event loop works and why it's important for asynchronous programming.
+
+2. What is the this keyword in JavaScript?
+   Describe how this behaves in different contexts, including global, object methods, and event handlers.
+
+3. What are JavaScript Promises?
+   Explain how promises work and provide an example of how to use them.
+
+4. What is async/await in JavaScript?
+   Describe how async and await are used to handle asynchronous code.
+
+5. What are arrow functions in JavaScript?
+   Explain the syntax and how arrow functions differ from traditional function expressions.
+
+6. What is the difference between map, filter, and reduce in JavaScript?
+   Provide examples of how each of these array methods is used.
+
+7. What is prototypal inheritance in JavaScript?
+   Describe how inheritance works in JavaScript using prototypes.
+
+8. What is the difference between synchronous and asynchronous code in JavaScript?
+   Explain the concepts with examples.
+
+9. What is the DOM in JavaScript?
+   Describe the Document Object Model and how JavaScript interacts with it.
+
+10. What is event delegation in JavaScript?
+   Explain how event delegation works and why it can be useful.

@@ -1,0 +1,61 @@
+1. What is JavaScript?
+   what JavaScript is and its primary use cases.
+
+  answer - JavaScript is synchronous single threaded  programming language , which is mostly use in web development.
+         . JavaScript is used to make pages dynamic 
+           Use Cases:-
+                  1. Client side  Web development : JavaScript is widely use to create interactive and dynamic websites by manipulating 
+                   DOM 
+                  2. JavaScript is also used server side development  , within node js 
+                  3. Building API : Creating  REST API 
+        
+
+2. How do you declare variables in JavaScript?
+   var, let, and const and their differences.
+
+   answer - 3 ways to declare variables in JavaScript . var ,let and  const
+            var -
+              Scope: var is function-scoped, meaning it is confined(मर्यादित) to the function in which it is declared.
+                     If declared outside a function, it becomes a global variable.
+              Hoisting: var is hoisted, which means it is moved to the top of its scope during the compilation phase.
+                        However, it is initialized with undefined   
+              Block Scope: var does not have block scope, meaning it is not confined to the block (e.g., within {}) in which it is declared.
+              Re-declaration & Re-initialization: Variables declared with var can be re-declared and re-initialized within the same scope without causing an error.
+
+            let - 
+               Scope: let is block-scoped, meaning it is confined to the block in which it is declared.
+               Hoisting: let is also hoisted, but unlike var, it is not initialized.
+                         This results in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered.  
+               Block Scope: let does follow block scope, so it is limited to the {} block in which it is defined.  
+               Re-declaration & Re-initialization: let can be re-initialized but cannot be re-declared within the same scope.
+
+            const -
+               Scope: const is block-scoped, meaning it is confined to the block in which it is declared.
+               Hoisting: const is also hoisted, but unlike var, it is not initialized.
+                         This results in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered.  
+               Block Scope: const does follow block scope, so it is limited to the {} block in which it is defined.  
+               Re-declaration & Re-initialization: const cannot be re-initialized but cannot be re-declared within the same scope. 
+
+3. What are data types in JavaScript?
+   List and explain primitive data types like string, number, boolean, undefined, null, and symbol.
+
+4. What is the difference between == and ===?
+   the difference between loose equality (==) and strict equality (===).
+
+5. What are functions in JavaScript?
+   Describe how to define a function, and explain the difference between function declarations and function expressions.
+
+6. What is a callback function?
+   Define what a callback function is and provide an example of how it's used.
+
+7. What is scope in JavaScript?
+   the concepts of global scope, function scope, and block scope.
+
+8. What is hoisting in JavaScript?
+   Describe how hoisting works in JavaScript for variables and functions.
+
+9. What are closures in JavaScript?
+   Define closures and provide an example of how they are used.
+
+10. the difference between null and undefined.
+   Describe the scenarios where each is used.

@@ -1,0 +1,29 @@
+1. What is the difference between var, let, and const regarding scope, hoisting, and reassignment?
+   Provide detailed examples to illustrate the differences.
+
+2. How does JavaScript handle memory management and garbage collection?
+   Explain how memory allocation and garbage collection work in JavaScript.
+
+3. What are JavaScript modules, and how do they work?
+   how to use import and export in ES6 modules.
+
+4. Explain the concepts of call, apply, and bind in JavaScript.
+   Provide examples of how each method is used.
+
+5. What is the difference between deep and shallow copies in JavaScript?
+   Explain how to create deep and shallow copies of objects and arrays.
+
+6. What are generators in JavaScript?
+   what generators are and provide an example of how to use them.
+
+7. How does the EventEmitter class work in Node.js?
+   Explain the role of EventEmitter and provide an example of how to use it.
+
+8. What is CORS (Cross-Origin Resource Sharing) and how does it work?
+   what CORS is and how to handle it in JavaScript applications.
+
+9. How does JavaScript handle concurrency, and what are the limitations?
+   Discuss concurrency in JavaScript, including the role of the single-threaded model.
+
+10.What are JavaScript design patterns, and can you name a few commonly used ones?
+   Provide examples of design patterns such as Singleton, Module, and Observer.
