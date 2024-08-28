@@ -8,7 +8,7 @@
                    DOM 
                   2. JavaScript is also used server side development  , within node js 
                   3. Building API : Creating  REST API 
-        
+     -------------------------------------------------------------------------------------------------------------------------------   
 
 2. How do you declare variables in JavaScript?
    var, let, and const and their differences.
@@ -35,15 +35,35 @@
                          This results in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered.  
                Block Scope: const does follow block scope, so it is limited to the {} block in which it is defined.  
                Re-declaration & Re-initialization: const cannot be re-initialized but cannot be re-declared within the same scope. 
-
+------------------------------------------------------------------------------------------------------------------------------------
 3. What are data types in JavaScript?
    List and explain primitive data types like string, number, boolean, undefined, null, and symbol.
+   answer - In JavaScript two type of data type , primitive and non-primitive data type
+           Primitive data type: total 7 primitive data type are used in JavaScript
+                              1. number
+                              2. BigInt
+                              3. symbol
+                              4. string
+                              5. undefined
+                              6. null
+                              7. Boolean 
+           Non-primitive data type : 
+                                 Object : object is non primitive data type in js
+-----------------------------------------------------------------------------------------------------------------------------
 
 4. What is the difference between == and ===?
    the difference between loose equality (==) and strict equality (===).
 
+    answer-
+          loose Equal : loose equal just check the data values,("2"==2) its true . type coercion will happen
+          strict Equal : Check both data type and data values,("2"===2)its false . not a chance of coercion
+
+  ------------------------------------------------------------------------------------------------------------------------        
+
 5. What are functions in JavaScript?
    Describe how to define a function, and explain the difference between function declarations and function expressions.
+
+   
 
 6. What is a callback function?
    Define what a callback function is and provide an example of how it's used.
