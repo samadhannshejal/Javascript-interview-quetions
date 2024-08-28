@@ -63,8 +63,23 @@
 5. What are functions in JavaScript?
    Describe how to define a function, and explain the difference between function declarations and function expressions.
 
-   
+   answer ➡️ In JavaScript function is reusable block of code design to perform perticular task. function can take parameter
+           and  will be return an output
+          ➡️Multiple ways to define function in JavaScript ,  but most two common way, function declaration and function expressions
 
+          ➡️function declaration :
+                                  ➡️function declaration define a function with specific name.
+                                  ➡️function declaration are hoisted , means when at the time of compilation it moves on top of scope
+                                   , so we can called function before it declare   
+                                  ➡️eg: function myFun(){}
+
+         ➡️function expression : 
+                                  ➡️ function expression are assign to variable
+                                  ➡️ function expression can be anonymous
+                                  ➡️function expression cannot be hoisted 
+                                  ➡️eg : const myfun=function(){}
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 6. What is a callback function?
    Define what a callback function is and provide an example of how it's used.
 

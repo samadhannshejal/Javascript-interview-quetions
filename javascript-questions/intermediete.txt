@@ -9,7 +9,7 @@
 
 4. What is async/await in JavaScript?
    Describe how async and await are used to handle asynchronous code.
-
+   
 5. What are arrow functions in JavaScript?
    Explain the syntax and how arrow functions differ from traditional function expressions.
 
