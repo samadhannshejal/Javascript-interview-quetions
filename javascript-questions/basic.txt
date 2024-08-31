@@ -15,27 +15,27 @@
 
    answer - 3 ways to declare variables in JavaScript . var ,let and  const
             var -
-              Scope: var is function-scoped, meaning it is confined(मर्यादित) to the function in which it is declared.
+             ➡️ Scope: var is function-scoped, meaning it is confined(मर्यादित) to the function in which it is declared.
                      If declared outside a function, it becomes a global variable.
-              Hoisting: var is hoisted, which means it is moved to the top of its scope during the compilation phase.
+             ➡️Hoisting: var is hoisted, which means it is moved to the top of its scope during the compilation phase.
                         However, it is initialized with undefined   
-              Block Scope: var does not have block scope, meaning it is not confined to the block (e.g., within {}) in which it is declared.
+             ➡️ Block Scope: var does not have block scope, meaning it is not confined to the block (e.g., within {}) in which it is declared.
               Re-declaration & Re-initialization: Variables declared with var can be re-declared and re-initialized within the same scope without causing an error.
 
             let - 
-               Scope: let is block-scoped, meaning it is confined to the block in which it is declared.
-               Hoisting: let is also hoisted, but unlike var, it is not initialized.
+             ➡️Scope: let is block-scoped, meaning it is confined to the block in which it is declared.
+             ➡️ Hoisting: let is also hoisted, but unlike var, it is not initialized.
                          This results in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered.  
-               Block Scope: let does follow block scope, so it is limited to the {} block in which it is defined.  
+             ➡️Block Scope: let does follow block scope, so it is limited to the {} block in which it is defined.  
                Re-declaration & Re-initialization: let can be re-initialized but cannot be re-declared within the same scope.
 
             const -
-               Scope: const is block-scoped, meaning it is confined to the block in which it is declared.
-               Hoisting: const is also hoisted, but unlike var, it is not initialized.
+               ➡️Scope: const is block-scoped, meaning it is confined to the block in which it is declared.
+               ➡️Hoisting: const is also hoisted, but unlike var, it is not initialized.
                          This results in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered.  
-               Block Scope: const does follow block scope, so it is limited to the {} block in which it is defined.  
+               ➡️Block Scope: const does follow block scope, so it is limited to the {} block in which it is defined.  
                Re-declaration & Re-initialization: const cannot be re-initialized but cannot be re-declared within the same scope. 
-------------------------------------------------------------------------------------------------------------------------------------
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 3. What are data types in JavaScript?
    List and explain primitive data types like string, number, boolean, undefined, null, and symbol.
    answer - In JavaScript two type of data type , primitive and non-primitive data type
@@ -63,7 +63,7 @@
 5. What are functions in JavaScript?
    Describe how to define a function, and explain the difference between function declarations and function expressions.
 
-   answer ➡️ In JavaScript function is reusable block of code design to perform perticular task. function can take parameter
+   Answer ➡️ In JavaScript function is reusable block of code design to perform perticular task. function can take parameter
            and  will be return an output
           ➡️Multiple ways to define function in JavaScript ,  but most two common way, function declaration and function expressions
 
@@ -83,11 +83,34 @@
 6. What is a callback function?
    Define what a callback function is and provide an example of how it's used.
 
+  Answer ➡️ Callback function is function that is passed as an argument in another function and its execution depends upon it parent function
+         ➡️ Callback function are often used in asynchronous programming ,like fetching data 
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖         
+
 7. What is scope in JavaScript?
    the concepts of global scope, function scope, and block scope.
 
+   Answer ➡️ Scope in JavaScript  refer to the contexts in which variable and function are accessible in JavaScript, 3 type of scope are available in js
+          ➡️ global scope : Variables and functions are declare in global scope are accessible in anywhere in the code
+          ➡️ function scope: variables declare within function are accessible only in function
+          ➡️ block scope : (while, if else , for ) are the block scope , variable declare by using let and const  are accessible within block scope
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
 8. What is hoisting in JavaScript?
    Describe how hoisting works in JavaScript for variables and functions.
+   Answer ➡️ In compilation phase variable and function declaration are moved on top , or , variable get assigned undefined placeholder and function
+              declaration are assigned function as it is
+
+   How its works ➡️ variable declare using var are get hoisted , it means undefined get assign  to variable , it will accessible before it declaration
+                   , but it will be return undefined
+                 ➡️ let and const are hoisted , but they are not initialized with any placeholder . accessing them before  declaration , it will show 
+                     reference error , this behavior due to TDZ (time between scope and declaration encountered)  
+                 ➡️ In case of function declaration are hoisted , the get initialization as it is
+                 ➡️ function expression are not hoisted , because   in function expression , function are assigned to variable , even if  variable declare 
+                     using var , it will undefined ,  that why it is not callable 
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 9. What are closures in JavaScript?
    Define closures and provide an example of how they are used.
