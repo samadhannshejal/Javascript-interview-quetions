@@ -86,7 +86,7 @@
   Answer ➡️ Callback function is function that is passed as an argument in another function and its execution depends upon it parent function
          ➡️ Callback function are often used in asynchronous programming ,like fetching data 
 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖         
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖      
 
 7. What is scope in JavaScript?
    the concepts of global scope, function scope, and block scope.
@@ -96,7 +96,7 @@
           ➡️ function scope: variables declare within function are accessible only in function
           ➡️ block scope : (while, if else , for ) are the block scope , variable declare by using let and const  are accessible within block scope
 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 8. What is hoisting in JavaScript?
    Describe how hoisting works in JavaScript for variables and functions.
@@ -110,10 +110,20 @@
                  ➡️ In case of function declaration are hoisted , the get initialization as it is
                  ➡️ function expression are not hoisted , because   in function expression , function are assigned to variable , even if  variable declare 
                      using var , it will undefined ,  that why it is not callable 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 9. What are closures in JavaScript?
    Define closures and provide an example of how they are used.
+   Answer ➡️ function which have  lexical environment of its parent function ,we can  access the variable from its parent function 
+             through its lexical environment 
+   Usages :  its use to create private variables 
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
 
 10. the difference between null and undefined.
    Describe the scenarios where each is used.
+   Answer ▶️ 
+          ▶️ null : null is primitive data type in JavaScript , which is  intentionally  define 
+          ▶️ undefined: undefined also primitive data type in JavaScript , if variable access before its declaration , so it will be undefined
+            
