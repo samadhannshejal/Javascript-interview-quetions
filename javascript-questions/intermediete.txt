@@ -1,8 +1,24 @@
 1. What is the event loop in JavaScript?
    Explain how the event loop works and why it's important for asynchronous programming.
+   Answer ▶️ Event loop in JavaScript is crucial mechanism for handling asynchronous operations . allowing JavaScript to perform 
+             non-blocking task
+
+   How its works ➡️ Call stack : JavaScript uses a call stack to keep track of functions to be executed .when function  is called
+                                  is pushed into call stack , once it complete then it will be pop out from call stack
+                 ➡️  Web APIs  : When asynchronous operations like setTimeout, HTTP requests,DOM event they are pushed into web 
+                                 APIs for execution
+                 ➡️ Task Queue: Once asynchronous operations are completed ,their corresponding callable function are pushed into 
+                                 callback Queue
+                 ➡️ Event loop: Event loop is continues monitoring call stack and call Queue, if  the call stack is empty , then 
+                                event loop take the first task from Queue and push to call stack for execution
+                 ➡️ Micro-task-Queue : Beside the task Queue ,there is micro task Queue for operations like promises , micro task
+                                       having higher priority and executed task before main task Queue
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                                                                                        
 
 2. What is the this keyword in JavaScript?
    Describe how this behaves in different contexts, including global, object methods, and event handlers.
+   Answer ▶️.
+   
 
 3. What are JavaScript Promises?
    Explain how promises work and provide an example of how to use them.

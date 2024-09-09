@@ -120,10 +120,9 @@
 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-
 10. the difference between null and undefined.
    Describe the scenarios where each is used.
    Answer ▶️ 
           ▶️ null : null is primitive data type in JavaScript , which is  intentionally  define 
           ▶️ undefined: undefined also primitive data type in JavaScript , if variable access before its declaration , so it will be undefined
-            
+
