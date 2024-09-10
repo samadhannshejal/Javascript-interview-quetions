@@ -17,14 +17,91 @@
 
 2. What is the this keyword in JavaScript?
    Describe how this behaves in different contexts, including global, object methods, and event handlers.
-   Answer ▶️.
-   
+   Answer ▶️. In javascript this keyword is refer the context , where function is called rather than where it defined
+
+   Examples ➡️ Global Context : ➖ this refer to global context  ->  console.log(this)
+                                 ➖ fun function (){
+                                    console.log(this);
+                                 }
+                                 fun() // this is refer to global object because , it called in global object
+
+            ➡️ Object methods :  when function is called  as an method of object   , its refer to the object itself
+
+                                 ex : ➖ const obj ={
+                                    name :'samadhan',
+                                    fun:function (){
+                                       console.log(this); // object itself
+                                    }
+                                 }   
+                                 obj.fun()  
+
+                                ➖ const obj ={
+                                    name :'samadhan',
+                                    fun:function (){
+                                       console.log(this); // window object 
+                                    }
+                                 }   
+                                const fun1= obj.fun() 
+                                fun1() 
+
+            ➡️ Event handlers : In event handlers, this refers to the element that fired the event.
+            ➡️ constructor function or class : this keyword refer to the newly created object 
+
+                              ex : function Person(){
+                                 console.log(this);
+                              }
+
+                             const person= new Person();
+
+            ➡️ Arrow function : arrow function don't have own this , they inherit this from   surrounding  lexical context
+
+                      ex :  const fun=()=>{
+                        console.log(this) // global 
+                      } 
+
+                      ex :  const obj={
+                        name :"samadhan",
+                        func:()=>{
+                           console.log(this)// global
+                        }
+                      } 
+                      obj.func()   
+
+                      ex :    const obj={
+                        name :"samadhan",
+                        func:function(){
+                          const innerFun= ()=>{
+                           console.log(this)// global
+                        }
+                        innerFun()
+                        }
+                      } 
+                      obj.func()      
+                             
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                             
 
 3. What are JavaScript Promises?
    Explain how promises work and provide an example of how to use them.
+  Answer ▶️ Promises in javascript is object , its eventual completion or failure 
+            Promises is allowing to you handle asynchronous operations in very beautiful way , more readable
+
+            Promises having 2 possible states
+            1) Pending :  its initial state , operation not yet complete
+            2) Fulfilled : operation completed successfully
+            3) Rejected  : operation failed
+
+            Promises are often used to handle asynchronous operation like API calls , file reading, or timers 
+            Promises is allow to use .then and .catch , to handle this 
+
+  Benefits of Promises:
+            1) Clean code: avoid  callback hell
+            2) Error handling 
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                    
 
 4. What is async/await in JavaScript?
    Describe how async and await are used to handle asynchronous code.
+   
    
 5. What are arrow functions in JavaScript?
    Explain the syntax and how arrow functions differ from traditional function expressions.
