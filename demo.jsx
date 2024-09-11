@@ -72,3 +72,19 @@
 //     }
 //   } 
 //   obj.func() 
+
+//! prototypes
+
+const person = {
+  greet:function() {
+    return `Hello, my name is ${this.name}`;
+  },
+};
+
+const student = Object.create(person);
+console.log(student) // student inherits from person
+
+student.name = "Samadhan";
+
+console.log(student.greet()); // "Hello, my name is Samadhan"
+

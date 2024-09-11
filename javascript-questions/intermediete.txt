@@ -101,16 +101,46 @@
 
 4. What is async/await in JavaScript?
    Describe how async and await are used to handle asynchronous code.
-   
+   Answer ▶️ async and await is used to handle asynchronous task in synchronous manner, its introduced in ESC2017, 
+             ➡️async : declare a function as asynchronous, which means its return promises
+             ➡️await : await pause the execution until promise is resolve or rejected
+
+   Benefits ▶️ it easier to readable
+            ➡️ Error handling by try catch blocking
+            ➡️ avoid promise chaining 
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖  
    
 5. What are arrow functions in JavaScript?
    Explain the syntax and how arrow functions differ from traditional function expressions.
+   Answer ▶️ Arrow function is introduced in ESC16 , it is more concise syntax for writing function in javascript
+
+   difference between Arrow function and normal function
+          ➡️ this binding : in normal function this refer to how function is called , but in arrow function , this is inherit from 
+                             surrounding lexical environment
+          ➡️ No argument:  arrow function have not its own arguments , but normal function have
+          ➡️ Cannot constructor : arrow function cannot use as constructor, but normal function can  
+
+ ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                       
+
 
 6. What is the difference between map, filter, and reduce in JavaScript?
    Provide examples of how each of these array methods is used.
 
+   Answer ➡️ map, filter reduce is array powerful array methods , for manipulate and transforming array
+         
+          ➡️ map() : visit every element in array , and return new array , does'nt modify original array
+          ➡️ filter() : visit every element in array , and return new array of elements those satisfy condition,return new array
+          ➡️ Reduce() : it also visit every element in array , return accumulating value, not modify original array
+
+ ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖         
+
 7. What is prototypal inheritance in JavaScript?
    Describe how inheritance works in JavaScript using prototypes.
+   Answer ▶️ Prototypal inheritance in javascript is a feature that is allows you to inherit the property and methods from another object
+            
+   ➡️How inherits works using prototypes : every javascript has hidden property called prototype or _proto_ , which is point to another 
+      object
 
 8. What is the difference between synchronous and asynchronous code in JavaScript?
    Explain the concepts with examples.
