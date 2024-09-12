@@ -139,14 +139,71 @@
    Describe how inheritance works in JavaScript using prototypes.
    Answer ▶️ Prototypal inheritance in javascript is a feature that is allows you to inherit the property and methods from another object
             
-   ➡️How inherits works using prototypes : every javascript has hidden property called prototype or _proto_ , which is point to another 
+   🔯How inherits works using prototypes🔯
+
+   ➡️prototype object  : every javascript has hidden property called prototype or _proto_ , which is point to another 
       object
+   ➡️ prototypal chain : When you try to access the property or method from an object , javascript first  check main object
+                        , if its not found then , js try to find  object prototype, still not able to found , js check all 
+                         prototype object until its null
+
+   ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖         
+                      
 
 8. What is the difference between synchronous and asynchronous code in JavaScript?
    Explain the concepts with examples.
+   Answer ▶️ synchronous code : 1) synchronous code execute line by line , the next line code execute after current execution is
+                                    complete
+                                 2) its block main thread, until current operation is complete
+                                 3) simple operation like variable assignment, mathematical operations
+
+          ▶️ asynchronous code : 1) asynchronous code run independently , without blocking main thread 
+                                 2) its uses like , fetching data, file reading  
+
+          🔯Key concepts🔯  
+                          1) callbacks : callback function is passed as an arguments to asynchronous operation , once asynchronous task is completed ,
+                           callback will execute
+                                         
+                          2) Promises : Promises is eventual completion or failure  
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                                   
 
 9. What is the DOM in JavaScript?
    Describe the Document Object Model and how JavaScript interacts with it.
+   Answer ▶️ Dom : Document object model  is programming interface for web Documents, it represents the structure of  web page in tree like
+                   each  node is an object represents part of Document. such as  element , attribute, text content . the dom is allows you to 
+                   access the element , manipulates the content   , structure and style of webpage
+
+                   Note : DOM is not javascript , it is web api provided  by browser
+
+          🔯Key points of DOM :          
+                            ➡️Tree structure : 1) The DOM represents an HTML or XML  documents as tree of nodes , where each element , attribute, text 
+                                               content is node of tree
+                                               2) <HTML/> is root node of document
+                                               3) <head/> and <body> is child nodes 
+                            ➡️Objects and nodes :e Elements and text in dom represent object    
+
+           🔯How JavaScript Interacts with the DOM :
+                                                    ➡️ Accessing element: by using className, id , query selector 
+                                                    ➡️ Manipulate the dom : changing content, changing attribute,changing style
+                                                    ➡️ Create and Removing Elements : create , remove , append
+                                                    ➡️ Event handling : addeventlistner
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖                                                    
+                            
 
 10. What is event delegation in JavaScript?
    Explain how event delegation works and why it can be useful.
+   Answer ▶️ Event delegation is technique in javascript where instead of adding individual event to each element , add single event to parent 
+              the event listener take advantage bubbling and allowing  it to listen  event of child elements
+
+
+          🔯 How event delegation works : 
+                                         ➡️ Event bubbling : trigger event on element and then bubbles up to its parent , grandparent and so on 
+                                                             it means parent element have an opportunity to catch the event 
+
+                                                             - you can use event.target to determine which child is called 
+
+          🔯 Use cases : 1) Performance :When many number of element , adding individual event to each , its very expensive and memory
+                                         taking , in this case event delegation is useful , just add event to parent element
+                         2) Dynamic element: When element adding or removing dynamically , in that case event delegation is useful
+                         3) Cleaner code : Instead of managing multiple event listener, just manage event at parent level, so it will be more 
+                                          cleaner code

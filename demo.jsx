@@ -75,16 +75,25 @@
 
 //! prototypes
 
-const person = {
-  greet:function() {
-    return `Hello, my name is ${this.name}`;
-  },
-};
+// const person = {
+//   greet:function() {
+//     return `Hello, my name is ${this.name}`;
+//   },
+// };
+// const person2 = {
+//   greet:function() {
+//     return `Hello, my name is ${this.name}`;
+//   },
+// };
 
-const student = Object.create(person);
-console.log(student) // student inherits from person
 
-student.name = "Samadhan";
+// const student = Object.create(person);
+//  // student inherits from person
 
-console.log(student.greet()); // "Hello, my name is Samadhan"
+//  student.name = "Samadhan";
+//  console.log(student)
+
+// console.log(student.greet()); // "Hello, my name is Samadhan"
+
+console.log(document)
 
