@@ -5,14 +5,14 @@ import { loadTodo, saveTodo } from "../utils/utils.js";
 const headerContainer = document.getElementById("header");
 const todoList = document.getElementById("todo-list-container");
 let isEdit = false;
+let editId = null;
 let todos = loadTodo() || [];
 const render = () => {
   headerContainer.innerHTML = Header();
   todoList.innerHTML = TodoList(todos);
-  console.log(isEdit);
   document
     .getElementById("add-todo")
-    .addEventListener("click", isEdit ? updateTodo : addTodo);
+    .addEventListener("click", !isEdit ? updateTodo : addTodo);
   todoList.addEventListener("click", (event) => {
     if (event.target && event.target.id === "delete-btn") {
       const id = event.target.dataset.id;
@@ -48,17 +48,30 @@ const deleteTodo = (id) => {
 };
 
 const editTodo = (id) => {
-  console.log(isEdit);
   if (id) {
     const todoEdit = todos.find((item) => item.id === id);
     const todoInput = document.getElementById("todo-input");
     todoInput.value = todoEdit.task;
     isEdit = true;
+    editId = id;
     document.getElementById("add-todo").innerText = "Update Todo";
   }
 };
 const updateTodo = () => {
-  const editText = document.getElementById("input-todo");
-  console.log(editText.value);
+  const editText = document.getElementById("todo-input");
+  if (!editText.value) {
+    alert("Please enter task !");
+    return;
+  }
+ todos=todos.map((item) => {
+    if (item.id === editId) {
+      return { ...item, task: editText.value };
+    }else {
+      return item
+    }
+  });
+  console.log(todos)
+  saveTodo(todos)
+  render()
 };
 render();
