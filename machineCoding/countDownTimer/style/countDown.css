@@ -1,0 +1,23 @@
+#input-clock,
+#start-btn {
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 4px 5px rgb(148, 143, 143);
+  margin: 10px;
+}
+#start-btn:hover {
+  padding: 12px;
+  cursor: pointer;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 80px;
+  border-right: 2px solid black;
+}
