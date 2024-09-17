@@ -1,0 +1,14 @@
+#date,#input-expense,#money-expense,#categories{
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#add-expense{
+    padding: 10px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,7 @@
+#expense-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 3px 5px 3px gray;
+}
