@@ -12,3 +12,26 @@
     border: none;
     cursor: pointer;
 }
+
+#expense-table-container {
+    width: 100%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 18px;
+    font-size: 20px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  #delete,#edit{
+    cursor: pointer;
+  }
