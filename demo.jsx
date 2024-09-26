@@ -95,5 +95,8 @@
 
 // console.log(student.greet()); // "Hello, my name is Samadhan"
 
-console.log(document)
+// console.log(document)
+
+let x
+console.log(x)
 
