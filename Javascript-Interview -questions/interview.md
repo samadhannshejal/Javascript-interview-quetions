@@ -2,12 +2,21 @@
 <details><summary><b>Answer</b></summary>
 
 - **undefined**:
-  - Case 1 
+  -  Case 1 
   1. If you access the variable before declaration, it will be `undefined`.
   2. This will happen only with variables declared using `var`.
 
    ```javascript
    console.log(x); // undefined
    var x = 10;
+    ```
+   - case 2
+   1. if variable is declare but still not initialize  , it will be `undefined`.
+
+   ```javascript
+   let x;
+   console.log(x); // undefined
+   
+   
 
 
