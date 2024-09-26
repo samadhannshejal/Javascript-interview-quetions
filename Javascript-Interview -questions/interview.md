@@ -17,7 +17,7 @@
    let x;
    console.log(x); // undefined
    ```
-   - **not defined** :
+- **not defined**:
    Variable is not defined in current scope , still you access it , so it will be not defined ( throw reference error)
 
    ```javascript
