@@ -2,6 +2,7 @@
 <details><summary><b>Answer</b></summary>
 
 - **undefined**:
+  - Case 1 
   1. If you access the variable before declaration, it will be `undefined`.
   2. This will happen only with variables declared using `var`.
 
