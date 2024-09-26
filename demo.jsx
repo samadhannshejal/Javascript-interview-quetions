@@ -97,6 +97,5 @@
 
 // console.log(document)
 
-let x
 console.log(x)
 
