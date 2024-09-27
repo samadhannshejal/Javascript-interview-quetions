@@ -79,4 +79,33 @@ function outerFun() {
 const fun1 = outerFun();
 fun1();
 ```
+## Question 4. What will be the output of the following code?
+
+```javascript
+((x)=>{
+ delete x;
+ console.log(x);  // 2
+})(2)
+```
+1. delete operator cannot delete local variables or functions parameters 
+2. delete operator works on properties of object
+
+## Question 5. What will be the output of the following code?
+```javascript
+const Employee={
+   company:'xyz'
+}
+const emp1=Object.create(Employee);
+delete emp1.company;
+console.log(emp.company) // xyz
+```
+- In above code emp1 is created as new object and inherit property from Employee object
+- It means emp1 does'nt have own property called company, so it wont be delete 
+- Its inherit property from Employee object which present in prototype 
+- delete operator does'nt work on prototype property 
+```javascript
+// you can delete property  by accessing prototype
+delete emp1.__proto__.company
+```` 
+
 

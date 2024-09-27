@@ -99,16 +99,24 @@
 
 // console.log(x)
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-    this.info = function () {
-      console.log(`My name is ${this.name} and my age is ${this.age}`);
-    };
-  }
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.info = function () {
+//       console.log(`My name is ${this.name} and my age is ${this.age}`);
+//     };
+//   }
   
-  const person1 = new Person("samadhan", 25);
-  const person2=new Person ("karodMan",30)
-  person2.info()
-  person1.info();
+//   const person1 = new Person("samadhan", 25);
+//   const person2=new Person ("karodMan",30)
+//   person2.info()
+//   person1.info();
+
+var Employee = {
+    company: 'xyz',
+  }
+  var emp1 = Object.create(Employee);
+  delete emp1.company
+  console.log(emp1.company);
+
 
