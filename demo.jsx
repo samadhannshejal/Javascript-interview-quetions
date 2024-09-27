@@ -97,5 +97,18 @@
 
 // console.log(document)
 
-console.log(x)
+// console.log(x)
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.info = function () {
+      console.log(`My name is ${this.name} and my age is ${this.age}`);
+    };
+  }
+  
+  const person1 = new Person("samadhan", 25);
+  const person2=new Person ("karodMan",30)
+  person2.info()
+  person1.info();
 

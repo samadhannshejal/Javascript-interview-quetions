@@ -39,7 +39,24 @@ function Person(name, age) {
     console.log(`My name is ${this.name} and my age is ${this.age}`);
   };
 }
-
 const person1 = new Person("samadhan", 25);
+const person2 = new Person("baluDon", 25);
 person1.info();
+person2.info();
 ```
+1. In above case ever time you  create  new object  the method is also recreate in memory , this is increase memory
+2. Every time at of obj creation function is recreated and local execution context is created  and its push into call stack so it's
+  take  more memory
+
+- **solution** 
+Use prototype , its shared to all instance 
+```javascript
+function Person (name, age){
+  this.name=name;
+  this.age=age;
+}
+Person.prototype.info=function (){
+    console.log(`My name is ${this.name} and my age is ${this.age}`);
+}
+const person1=new Person ("samadhan",25)
+person1.info()
