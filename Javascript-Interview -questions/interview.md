@@ -1,7 +1,5 @@
 ## Question 1. What's the difference between undefined and not defined in JavaScript
 
-<details><summary><b>Answer</b></summary>
-
 - **undefined**:
 
   - Case 1
@@ -32,7 +30,6 @@
 
 ## Question 2 What is the drawback of declaring methods directly in JavaScript objects ?
 
-<details><summary><b>Answer</b></summary>
 
 ```javascript
 function Person(name, age) {
