@@ -48,7 +48,7 @@ person2.info();
 2. Every time at of obj creation function is recreated and local execution context is created  and its push into call stack so it's
   take  more memory
 
- **solution**
+ - **solution** : 
 Use prototype , its shared to all instance 
 ```javascript
 function Person (name, age){
