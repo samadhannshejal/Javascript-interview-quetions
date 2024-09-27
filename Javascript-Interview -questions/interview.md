@@ -28,8 +28,7 @@
   console.log(x); // reference error - not defined
   ```
 
-## Question 2 What is the drawback of declaring methods directly in JavaScript objects ?
-
+## Question 2. What is the drawback of declaring methods directly in JavaScript objects ?
 
 ```javascript
 function Person(name, age) {
@@ -44,19 +43,40 @@ const person2 = new Person("baluDon", 25);
 person1.info();
 person2.info();
 ```
-1. In above case ever time you  create  new object  the method is also recreate in memory , this is increase memory
-2. Every time at of obj creation function is recreated and local execution context is created  and its push into call stack so it's
-  take  more memory
 
- - **solution** : 
-Use prototype , its shared to all instance 
+1. In above case ever time you create new object the method is also recreate in memory , this is increase memory
+2. Every time at of obj creation function is recreated and local execution context is created and its push into call stack so it's
+   take more memory
+
+- **solution** :
+  Use prototype , its shared to all instance
+
 ```javascript
-function Person (name, age){
-  this.name=name;
-  this.age=age;
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
 }
-Person.prototype.info=function (){
-    console.log(`My name is ${this.name} and my age is ${this.age}`);
+Person.prototype.info = function () {
+  console.log(`My name is ${this.name} and my age is ${this.age}`);
+};
+const person1 = new Person("samadhan", 25);
+person1.info();
+```
+
+## Question 3. What is “closure” in javascript? Can you provide an example?
+
+1. A closure in javascript is feature where inner function has access of variables present in outer function even if finished execution of outer function
+2. its remember the environment was created by outer function
+
+```javascript
+function outerFun() {
+  let x = 10;
+  function inner() {
+    console.log(x);
+  }
+  return inner;
 }
-const person1=new Person ("samadhan",25)
-person1.info()
+const fun1 = outerFun();
+fun1();
+```
+
