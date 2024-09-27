@@ -17,13 +17,25 @@
    let x;
    console.log(x); // undefined
    ```
-- **not defined**:
+- **not defined** :
    Variable is not defined in current scope , still you access it , so it will be not defined ( throw reference error)
 
    ```javascript
    console.log(x) // reference error - not defined
-
    ````
+## What is the drawback of declaring methods directly in JavaScript objects ? 
+ ```javascript
+ function Person (name,age){
+   this.name=name;
+   this.age=age;
+   this.info=function (){
+      console.log(`My name is ${this.name} and my age is ${this.age}`)
+   }
+
+ }
+
+const person1=new Person ("samadhan",25);
+person1.info()
 
    
    
