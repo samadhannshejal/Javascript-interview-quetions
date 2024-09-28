@@ -106,6 +106,18 @@ console.log(emp.company) // xyz
 ```javascript
 // you can delete property  by accessing prototype
 delete emp1.__proto__.company
-```` 
+```
+## Question 6. What will be the output of the following code?
+```javascript
+var z=1,y=z=typeof y;
+console.log(y) // undefined
+```
+Associativity rule of assignment  operator is right to left 
+- typeof y is undefined 
+- undefined assigned to z
+- z will be assigned to y as undefined 
+Answer will  be undefined
+
+
 
 
