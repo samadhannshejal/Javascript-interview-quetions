@@ -118,6 +118,8 @@ Associativity rule of assignment  operator is right to left
 - z will be assigned to y as undefined 
 Answer will  be undefined
 
+## Question 7. Describe Singleton Pattern In JavaScript
+
 
 
 
