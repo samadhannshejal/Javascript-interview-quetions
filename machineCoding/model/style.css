@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+#model-container {
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#model {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+  box-shadow: 2px 5px 3px 2px black;
+}
+#none {
+  display: none;
+}
+#model-header {
+  /* display: flex; */
+  float: right;
+}
+.cross {
+  font-size: 40px;
+  margin: 8px 10px;
+  cursor: pointer;
+}
+.model-body {
+  height: 90%;
+}
+.model-footer {
+}
+.btn {
+  padding: 10px;
+}
