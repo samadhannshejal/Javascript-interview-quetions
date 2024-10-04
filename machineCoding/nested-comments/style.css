@@ -1,0 +1,16 @@
+#comment-header{
+    display: flex;
+    flex-direction:column;
+    margin-top: 10px;
+}
+#comment{
+    font-weight: 700;
+    font-size: x-large;
+}
+.replies{
+    margin-left: 20px;
+}
+.comment-body span{
+   margin-left: 20px;
+   cursor: pointer;
+}
