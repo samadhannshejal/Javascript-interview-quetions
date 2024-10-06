@@ -32,3 +32,22 @@
   }
   frequency1(str)
 
+
+  //!  use reduce method below
+
+  const arr=["hello","javascript","Hello","java","javascript","HTML"];
+
+  const ans=arr.reduce((allValues,currValue)=>{
+     if(value in allValues){
+        allValues[value]++;
+
+     }
+     else {
+        allValues[value]=1;
+     }
+
+     return allValues
+  },{})
+
+  console.log(ans)
+
